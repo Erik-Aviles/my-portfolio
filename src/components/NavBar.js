@@ -10,7 +10,7 @@ const links = [
   { name: "Inicio", path: "/", icon: "j", className: "mr-4" },
   { name: "Sobre mi", path: "/about", icon: "j", className: "mx-4" },
   { name: "Servicios", path: "/services", icon: "j", className: "mx-4" },
-  { name: "Proyectos", path: "/proyects", icon: "j", className: "mx-4" },
+  { name: "Portafolio", path: "/portfolio", icon: "j", className: "mx-4" },
   { name: "Contactos", path: "/contacts", icon: "j", className: "ml-4" },
 ];
 const linksSocialMedia = [
