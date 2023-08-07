@@ -1,10 +1,11 @@
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "@/components/stylesComponents/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import profileWomen from "../../public/images/profile/profile-2.png";
-import AnimatedNumber from "@/components/AnimatedNumber";
+import AnimatedNumber from "@/components/stylesComponents/AnimatedNumber";
+import Skills from "@/components/Skills";
 
 const historicalData = [
   { id: 1, description: "Clientes satisfehos", time: 5 },
@@ -65,7 +66,7 @@ export default function about() {
                   key={data.id}
                   className="flex flex-col items-end justify-center"
                 >
-                  <span className="inline-block text-7xl font-bold">
+                  <span className="inline-block text-5xl font-bold">
                     <AnimatedNumber value={data.time} />+
                   </span>
                   <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -75,6 +76,7 @@ export default function about() {
               ))}
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
