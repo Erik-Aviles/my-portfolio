@@ -7,6 +7,7 @@ import profileWomen from "../../public/images/profile/profile-2.png";
 import AnimatedNumber from "@/components/stylesComponents/AnimatedNumber";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const historicalData = [
   { id: 1, description: "Clientes satisfehos", time: 5 },
@@ -79,6 +80,7 @@ export default function about() {
           </div>
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
