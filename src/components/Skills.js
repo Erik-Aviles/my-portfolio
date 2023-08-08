@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./stylesComponents/AnimatedSkill";
+import Title from "./Title";
 
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-6xl mt-24 w-full text-center">Skills</h2>
+      <Title title="Skills" />
       <div className="w-full h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"

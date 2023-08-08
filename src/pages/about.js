@@ -6,6 +6,7 @@ import React from "react";
 import profileWomen from "../../public/images/profile/profile-2.png";
 import AnimatedNumber from "@/components/stylesComponents/AnimatedNumber";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const historicalData = [
   { id: 1, description: "Clientes satisfehos", time: 5 },
@@ -69,14 +70,15 @@ export default function about() {
                   <span className="inline-block text-5xl font-bold">
                     <AnimatedNumber value={data.time} />+
                   </span>
-                  <h2 className="text-xl font-medium capitalize text-dark/75">
+                  <h3 className="text-xl font-medium capitalize text-dark/75">
                     {data.description}
-                  </h2>
+                  </h3>
                 </div>
               ))}
             </div>
           </div>
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>

@@ -43,8 +43,8 @@ export default function Home() {
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                   download={true}
                 >
-                  Resumen
-                  <LinkArrow className="w-6 ml-1" />
+                  Descargar CV
+                  <LinkArrow className="w-5 ml-1" />
                 </Link>
                 <Link
                   href="eriavicor34@gmail.com"
