@@ -10,7 +10,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 
 const historicalData = [
-  { id: 1, description: "Clientes satisfehos", time: 5 },
+  { id: 1, description: "Clientes satisfechos", time: 5 },
   { id: 2, description: "Proyectos completados", time: 7 },
   { id: 3, description: "Año de experiencia", time: 2 },
 ];
@@ -19,17 +19,17 @@ const myBiografy = [
   {
     id: 1,
     paragraph:
-      "Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.",
+      "Hola, soy Erika Avilés, una desarrolladora web y diseñadora de UI / UX con una pasión por crear experiencias digitales hermosas, funcionales y centradas en el usuario. Con 2 años de experiencia en el campo. Siempre estoy buscando formas nuevas e innovadoras de dar vida a las visiones de mis clientes.",
   },
   {
     id: 2,
     paragraph:
-      "I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.",
+      "Creo que el diseño es algo más que hacer que las cosas se vean bonitas: se trata de resolver problemas y crear experiencias intuitivas y agradables para los usuarios.",
   },
   {
     id: 3,
     paragraph:
-      "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
+      "Ya sea que esté trabajando en un sitio web, una aplicación móvil u otro producto digital, aporto mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario a cada proyecto en el que trabajo. Espero tener la oportunidad de aportar mis habilidades y pasión a su próximo proyecto.",
   },
 ];
 
@@ -42,12 +42,15 @@ export default function about() {
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout>
-          <AnimatedText text="Passion Fuels Purpose! " className="mb-16" />
+          <AnimatedText
+            text="¡La pasión alimenta el propósito!"
+            className="mb-16"
+          />
 
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start ">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
-                Biografia
+                Biografía
               </h2>
               {myBiografy.map((item) => (
                 <p className="font-medium mb-4">{item.paragraph}</p>

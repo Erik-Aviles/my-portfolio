@@ -6,7 +6,7 @@ import Title from "./Title";
 const Skills = () => {
   return (
     <>
-      <Title title="Skills" />
+      <Title title="Habilidades" />
       <div className="w-full h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight">
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"

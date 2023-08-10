@@ -6,10 +6,13 @@ const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
       <Layout className="py-8 flex items-certer justify-between">
-        <span>{new Date().getFullYear()} &copy; All Rights</span>
+        <span>
+          {new Date().getFullYear()} &copy; Todos los derechos reservados
+        </span>
         <div className="flex items-center">
-          Build With <span className="text-primary text-2xl px-1">&#9825;</span>
-          by&nbsp;
+          Hecho con mucho{" "}
+          <span className="text-primary text-2xl px-1">&#9825;</span>
+          por&nbsp;
           <Link
             href="/"
             targer="_black"
@@ -24,7 +27,7 @@ const Footer = () => {
             targer="_black"
             className="underline underline-offset-2 "
           >
-            Say hello
+            Dime Hola!
           </Link>
         </div>
       </Layout>

@@ -27,31 +27,30 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center ">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design"
+                text="Convertir la visión en realidad con código y diseño"
                 className="!text-left"
               />
               <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                Como desarrolladora full-stack, me dedico a convertir ideas en
+                aplicaciones web innovadoras. Explore mis últimos proyectos,
+                mostrando mi experiencia en React.js y desarrollo web.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
                   href="/dummy.pdf"
                   target="_black"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
+                  className="w-full flex items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                   download={true}
                 >
                   Descargar CV
-                  <LinkArrow className="w-5 ml-1" />
+                  <LinkArrow className="w-7 ml-2" />
                 </Link>
                 <Link
                   href="eriavicor34@gmail.com"
                   target="_black"
                   className="ml-4 text-lg font-medium capitalize text-dark underline"
                 >
-                  Contact
+                  Contacto
                 </Link>
               </div>
             </div>

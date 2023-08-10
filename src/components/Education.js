@@ -32,7 +32,7 @@ const Education = () => {
   });
   return (
     <div className="mt-24">
-      <Title title="Educacion" />
+      <Title title="Educación" />
       <div ref={ref} className="w-[75%] mt-8 mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
