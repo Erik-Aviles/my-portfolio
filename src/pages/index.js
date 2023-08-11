@@ -18,11 +18,13 @@ export default function Home() {
       <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
         <Layout>
           <div className="flex items-center justify-between w-full">
-            <div className="w-1/2 self-center ">
+            <div className="w-1/2">
               <Image
                 src={profileWomen}
                 alt="A girl"
                 className="w-full h-auto px-[120px] rounded-b-[50%]"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center ">
@@ -38,16 +40,16 @@ export default function Home() {
               <div className="flex items-center self-start mt-2">
                 <Link
                   href="/dummy.pdf"
-                  target="_black"
-                  className="w-full flex justify-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light dark:hover:border-light dark:hover:text-light dark:hover:bg-dark"
+                  target={"_black"}
+                  className="flex items-center  bg-dark text-light p-2.5 px-4 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light dark:hover:border-light dark:hover:text-light dark:hover:bg-dark"
                   download={true}
                 >
-                  Descargar CV
-                  <LinkArrow className="w-4 ml-2" />
+                  {"Descargar CV"}
+                  <LinkArrow className={"ml-1"} />
                 </Link>
                 <Link
                   href="/"
-                  target="_black"
+                  target={"_black"}
                   className="ml-4 text-lg font-medium capitalize text-dark dark:text-light  underline"
                 >
                   Contacto

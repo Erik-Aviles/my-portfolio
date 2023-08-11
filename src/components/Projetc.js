@@ -20,6 +20,8 @@ const Projetc = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -65,6 +67,8 @@ const Projetc = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between p-4">
