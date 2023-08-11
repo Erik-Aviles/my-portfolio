@@ -7,9 +7,10 @@ const Skills = () => {
   return (
     <>
       <Title title="Habilidades" />
-      <div className="w-full h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark
+           dark:shadow-light"
           whileHover={{ scale: 1.05 }}
         >
           WEB

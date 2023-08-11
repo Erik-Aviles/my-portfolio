@@ -3,7 +3,7 @@ import React from "react";
 const Layout = ({ children, className = "" }) => {
   return (
     <div
-      className={`w-full h-full inline-block z-0 bg-light px-32 pb-32${className}`}
+      className={`w-full h-full inline-block z-0 bg-light px-32 dark:bg-dark pb-32${className}`}
     >
       {children}
     </div>

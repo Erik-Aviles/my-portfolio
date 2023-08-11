@@ -31,12 +31,12 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="mt-24">
+    <div className="mt-24 ">
       <Title title="Educación" />
       <div ref={ref} className="w-[75%] mt-8 mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-screen bg-dark origin-top"
+          className="absolute left-9 top-0 w-[4px] h-[90vh] bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           {educationData.map((item, index) => (

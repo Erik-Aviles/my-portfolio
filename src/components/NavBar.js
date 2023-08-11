@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { TwitterIcon, GithubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
 import { motion } from "framer-motion";
 import CustomLink from "./CustomLink";
+import DarkMode from "./DarkMode";
 
 //  links
 const links = [
@@ -15,7 +16,7 @@ const links = [
 const linksSocialMedia = [
   {
     title: "Twiter",
-    href: "https://twitter.com/",
+    href: "/",
     icon: <TwitterIcon />,
     className: "w-6 mr-3",
   },
@@ -33,15 +34,15 @@ const linksSocialMedia = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "/",
     icon: <InstagramIcon />,
-    className: "w-6 ml-3",
+    className: "w-6 mx-3",
   },
 ];
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
       <nav>
         {links.map((item, index) => (
           <CustomLink
@@ -65,6 +66,7 @@ const NavBar = () => {
             {item.icon}
           </motion.a>
         ))}
+        <DarkMode />
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
