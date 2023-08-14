@@ -31,14 +31,17 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="mt-24 ">
-      <Title title="Educación" />
-      <div ref={ref} className="w-[75%] mt-8 mx-auto relative">
+    <div className="my-24 ">
+      <Title title="Educación" className="md:mb-16" />
+      <div
+        ref={ref}
+        className="w-[75%] mt-8 mx-auto relative lg:w-[90%] md:w-full"
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-[90vh] bg-dark origin-top dark:bg-light"
+          className="absolute left-9 top-0 w-[4px] h-[90vh] bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           {educationData.map((item, index) => (
             <Details
               key={`id${index}`}
