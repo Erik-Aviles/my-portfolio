@@ -46,7 +46,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" relative w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className=" relative w-full px-32 pt-8 font-medium flex items-center justify-between dark:text-light z-10 xl:px-16 md:px-12 sm:px-8 sm:pt-8 sm:pb-14">
       <ButtonHamburger handleClick={handleClickOpen} isOpen={isOpen} />
       <div className="w-full flex justify-between items-center lg:hidden ">
         <nav className="flex items-center justify-between gap-4 text-sm">
