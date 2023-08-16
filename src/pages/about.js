@@ -8,6 +8,7 @@ import AnimatedNumber from "@/components/stylesComponents/AnimatedNumber";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const historicalData = [
   { id: 1, description: "Clientes satisfechos", time: 5 },
@@ -40,6 +41,7 @@ export default function about() {
         <title>Erika | Sobre mi</title>
         <meta name="description" content="Informacion personal" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

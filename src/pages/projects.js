@@ -3,6 +3,7 @@ import AnimatedText from "@/components/stylesComponents/AnimatedText";
 import Head from "next/head";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import Projetc from "@/components/Projetc";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FeatureProjects = [
   {
@@ -26,6 +27,7 @@ const projects = () => {
           content="Proyectos realizados a lo largo de mi carrera profesional"
         />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center mb-16">
         <Layout className="pt-16">
           <AnimatedText
