@@ -53,8 +53,8 @@ const NavBar = () => {
           {links.map((item, index) => (
             <CustomLink
               key={`id${index}${item.title}`}
-              href={item.href}
               title={item.title}
+              href={item.href}
               className={item.className}
             />
           ))}

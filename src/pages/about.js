@@ -52,8 +52,10 @@ export default function about() {
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biografía
               </h2>
-              {myBiografy.map((item) => (
-                <p className="font-medium mb-4">{item.paragraph}</p>
+              {myBiografy.map((item, index) => (
+                <p key={`id-${index}`} className="font-medium mb-4">
+                  {item.paragraph}
+                </p>
               ))}
             </div>
 

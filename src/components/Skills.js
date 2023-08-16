@@ -5,13 +5,14 @@ import Title from "./Title";
 
 const Skills = () => {
   return (
-    <>
+    <div className="mt-24">
       <Title title="Habilidades" className="md:mt-32" />
       <div
-        className="w-full h-[80vh] relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
-      lg:bg-circularLightLg lg:dark:bg-circularDarkLg
-      md:bg-circularLightMd md:dark:bg-circularDarkMd
-      sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
+        className="w-full h-[80vh] relative flex items-center justify-center rounded-full  lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
+        bg-circularLight dark:bg-circularDark 
+        lg:bg-circularLightLg lg:dark:bg-circularDarkLg
+        md:bg-circularLightMd md:dark:bg-circularDarkMd
+        sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
       >
         <motion.div
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark
@@ -31,7 +32,7 @@ const Skills = () => {
         <Skill name="Otro2" y="-2vw" x="27vw" />
         <Skill name="Otro3" y="12vw" x="12vw" />
       </div>
-    </>
+    </div>
   );
 };
 
