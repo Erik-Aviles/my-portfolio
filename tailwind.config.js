@@ -4,10 +4,12 @@ module.exports = {
   purge: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/resources/**/*.{js,ts,jsx,tsx}",
   ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/resources/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -18,9 +20,11 @@ module.exports = {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
+        background: "#fefefe",
         dark: "#1b1b1b",
         light: "#f5f5f5",
-        primary: "#B63E96", // 240,86,199
+        primary: "#9A8CF4", // 240,86,199
+        /*   primary: "#B63E96", // 240,86,199 */
         primaryDark: "#58E6D9", // 80,230,217
       },
       animation: {

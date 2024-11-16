@@ -1,40 +1,12 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
-import { TwitterIcon, GithubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
 import { motion } from "framer-motion";
 import CustomLink from "./CustomLink";
 import DarkMode from "./DarkMode";
 import ButtonHamburger from "./ButtonHamburger";
 import CustomMobileLink from "./CustomMobileLink";
-
-//  links
-const links = [
-  { title: "Inicio", href: "/", icon: "j" },
-  { title: "Sobre mi", href: "/about", icon: "j" },
-  { title: "Servicios", href: "/services", icon: "j" },
-  { title: "Proyectos", href: "/projects", icon: "j" },
-  { title: "Contactos", href: "/contacts", icon: "j" },
-];
-const linksSocialMedia = [
-  {
-    title: "Twiter",
-    href: "/",
-    icon: <TwitterIcon />,
-    className: "w-6 mr-3",
-  },
-  {
-    title: "GitHub",
-    href: "https://github.com/Erik-Aviles",
-    icon: <GithubIcon />,
-    className: "w-6 mx-3",
-  },
-  {
-    title: "Linkedin",
-    href: "https://www.linkedin.com/in/erikaviles/",
-    icon: <LinkedInIcon />,
-    className: "w-6 mx-3",
-  },
-];
+import { links, linksSocialMedia } from "@/resources/linkdata";
+import Hireme from "./Hireme";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +18,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className=" relative w-full px-32 pt-8 font-medium flex items-center justify-between dark:text-light z-10 xl:px-16 md:px-12 sm:px-8 sm:pt-8 sm:pb-14">
+    <header className="relative w-full p-7 lg:pr-0 lg:py-0 font-medium flex items-center justify-between dark:text-light z-10">
       <ButtonHamburger handleClick={handleClickOpen} isOpen={isOpen} />
       <div className="w-full flex justify-between items-center lg:hidden ">
         <nav className="flex items-center justify-between gap-4 text-sm">
@@ -59,7 +31,8 @@ const NavBar = () => {
             />
           ))}
         </nav>
-        <nav className="flex items-center justify-center">
+        <Logo />
+        <nav className="flex items-center justify-center gap-4">
           {linksSocialMedia.map((item, index) => (
             <motion.a
               key={`id${index}${item.title}`}
@@ -94,7 +67,7 @@ const NavBar = () => {
               />
             ))}
           </nav>
-          <nav className="flex items-center justify-center flex-wrap mt-2 text-light dark:text-dark">
+          <nav className="flex items-center justify-center flex-wrap gap-4 mt-2 text-light dark:text-dark">
             {linksSocialMedia.map((item, index) => (
               <motion.a
                 key={`id${index}${item.title}`}
@@ -111,10 +84,7 @@ const NavBar = () => {
           </nav>
         </motion.div>
       ) : null}
-
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
-      </div>
+      <Hireme className="hidden lg:block" />
     </header>
   );
 };

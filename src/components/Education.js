@@ -1,26 +1,26 @@
 import React, { useRef } from "react";
-import Title from "./Title";
 import Details from "./Details";
 import { motion, useScroll } from "framer-motion";
+import { SubTitle } from "./Titles";
 
 const educationData = [
   {
-    type: "Especializacion Desarrollo Web",
+    type: "Especialización en el Desarrollo Web Full Stack",
     time: "2020-2023",
     place: "Platzy",
-    info: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    info: "",
   },
   {
-    type: "Ingenieria en Informatica y Ciencias Computacionales",
+    type: "Ingenieria en Informática y Ciencias Computacionales",
     time: "2015-2020",
-    place: "Universidad Tecnica de Cotopaxi",
-    info: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    place: "Universidad Técnica de Cotopaxi",
+    info: "",
   },
   {
-    type: "Bachiller en Informatica",
+    type: "Bachiller en Informática",
     time: "2011-2014",
     place: "Unidad Educativa Nicolas Infante Diaz",
-    info: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    info: "",
   },
 ];
 
@@ -31,11 +31,11 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-24 ">
-      <Title title="Educación" className="md:mb-16" />
+    <section className="w-full flex flex-col md:gap-4 gap-8 ">
+      <SubTitle title="Educación" className="" />
       <div
         ref={ref}
-        className="w-[75%] mt-8 mx-auto relative lg:w-[90%] md:w-full"
+        className="relative flex flex-col md:gap-4 gap-8 items-center max-w-2xl mx-auto bg-light dark:bg-dark"
       >
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -53,7 +53,7 @@ const Education = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 
