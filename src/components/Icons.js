@@ -1,4 +1,192 @@
 import * as React from "react";
+
+export const WhatsappIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="1.4em"
+    height="1.4em"
+    viewBox="0 0 105.885 105.885"
+    {...rest}
+    className={` ${className}`}
+  >
+    <defs>
+      <linearGradient id="d">
+        <stop
+          offset={0}
+          style={{
+            stopColor: "#000",
+            stopOpacity: 0.41666666,
+          }}
+        />
+        <stop
+          offset={1}
+          style={{
+            stopColor: "#000",
+            stopOpacity: 0,
+          }}
+        />
+      </linearGradient>
+      <linearGradient id="a">
+        <stop
+          offset={0}
+          style={{
+            stopColor: "#006c00",
+            stopOpacity: 1,
+          }}
+        />
+        <stop
+          offset={1}
+          style={{
+            stopColor: "#00c100",
+            stopOpacity: 0,
+          }}
+        />
+      </linearGradient>
+      <linearGradient
+        xlinkHref="#a"
+        id="e"
+        x1={79.186}
+        x2={132.859}
+        y1={116.516}
+        y2={192.112}
+        gradientUnits="userSpaceOnUse"
+      />
+      <linearGradient
+        xlinkHref="#d"
+        id="f"
+        x1={397.456}
+        x2={478.736}
+        y1={600.332}
+        y2={700.332}
+        gradientUnits="userSpaceOnUse"
+      />
+      <path
+        id="b"
+        d="M11.113 6.085a.53.53 0 0 0 .529-.529v-3.44a.53.53 0 0 0-.53-.529h-1.058v4.498z"
+        style={{
+          strokeWidth: 0.26458332,
+        }}
+      />
+      <path
+        id="c"
+        d="M11.113 6.085a.53.53 0 0 0 .529-.529v-3.44a.53.53 0 0 0-.53-.529h-1.058v4.498z"
+        style={{
+          strokeWidth: 0.26458332,
+        }}
+      />
+    </defs>
+    <g transform="translate(-47.365 -93.159) scale(.95064)">
+      <ellipse
+        cx={105.845}
+        cy={154.125}
+        rx={46.125}
+        ry={47.625}
+        style={{
+          opacity: 1,
+          fill: "#00c100",
+          fillOpacity: 1,
+          stroke: "none",
+          strokeWidth: 0.8041358,
+          strokeLinecap: "square",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 4,
+          strokeDasharray: ".80413575,4.82481454",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+          paintOrder: "stroke fill markers",
+        }}
+      />
+      <circle
+        cx={105.515}
+        cy={153.687}
+        r={52.162}
+        style={{
+          opacity: 1,
+          fill: "none",
+          fillOpacity: 1,
+          stroke: "#26e72b",
+          strokeWidth: 1.56200004,
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeMiterlimit: 4,
+          strokeDasharray: "1.562,9.372",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+          paintOrder: "stroke fill markers",
+        }}
+      />
+      <ellipse
+        cx={105.845}
+        cy={154.125}
+        rx={46.125}
+        ry={47.625}
+        style={{
+          opacity: 1,
+          fill: "url(#e)",
+          fillOpacity: 1,
+          stroke: "none",
+          strokeWidth: 0.8041358,
+          strokeLinecap: "square",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 4,
+          strokeDasharray: ".80413575,4.82481454",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+          paintOrder: "stroke fill markers",
+        }}
+      />
+      <path
+        d="M469.066 504.81 292.518 695.037l55.097 59.1a169.294 169.294 0 0 0 52.43 8.384c83.967-.06 155.962-61.915 171.283-147.157z"
+        style={{
+          fill: "url(#f)",
+          fillOpacity: 1,
+          stroke: "none",
+          strokeWidth: ".99999994px",
+          strokeLinecap: "butt",
+          strokeLinejoin: "miter",
+          strokeOpacity: 1,
+        }}
+        transform="scale(.26458)"
+      />
+      <path
+        d="M106.196 128.976c-13.206 0-23.912 11.054-23.912 24.69.01 5.231 1.45 11.228 2.655 12.525v0l-3.975 14.151 14.242-3.633v0c2.882 1.608 6.007 1.638 10.99 1.646 13.206 0 23.912-11.054 23.912-24.69 0-13.635-10.706-24.689-23.912-24.689z"
+        style={{
+          opacity: 1,
+          fill: "#00a400",
+          fillOpacity: 1,
+          stroke: "#fff",
+          strokeWidth: 5.09299994,
+          strokeLinecap: "square",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 4,
+          strokeDasharray: "none",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+          paintOrder: "stroke fill markers",
+        }}
+      />
+      <path
+        d="M96.716 146.469c-.482 4.11 1.311 8.588 3.582 11.884 2.923 4.243 6.55 8.023 11.241 8.726.8.12 2.27-.862 2.27-.862l.02.02a4.104 4.104 0 0 0 1.059-5.706c-1.269-1.848-4.927-1.357-6.815-.106-1.472-1.487-2.891-3.03-3.8-4.31-.847-1.195-1.763-2.898-2.626-4.65 1.755-1.354 3.398-4.582 2.247-6.38-1.194-1.865-3.731-2.406-5.635-1.274l.656 1.605c-.403-.968-.656-1.605-.656-1.605s-1.424 1.64-1.543 2.658z"
+        style={{
+          opacity: 1,
+          fill: "#fff",
+          fillOpacity: 1,
+          stroke: "none",
+          strokeWidth: 0.92763442,
+          strokeLinecap: "square",
+          strokeLinejoin: "miter",
+          strokeMiterlimit: 4,
+          strokeDasharray: "none",
+          strokeDashoffset: 0,
+          strokeOpacity: 1,
+          paintOrder: "stroke fill markers",
+        }}
+      />
+    </g>
+  </svg>
+);
+
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

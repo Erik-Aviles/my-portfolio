@@ -39,7 +39,7 @@ export default function Document() {
         `}
         </Script>
       </Head>
-      <body>
+      <body className="font-mont bg-background dark:bg-dark w-full min-h-screen">
         <Main />
         <NextScript />
       </body>

@@ -76,5 +76,10 @@ module.exports = {
       // => @media (max-width: 479px) { ... }
     },
   },
+  safelist: [
+    {
+      pattern: /bg-primary\/\d+/,
+    },
+  ],
   plugins: [],
 };

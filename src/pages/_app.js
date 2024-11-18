@@ -1,10 +1,12 @@
-import NavBar from "@/components/NavBar";
 import "tailwindcss/tailwind.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
-import Footer from "@/components/Footer";
-import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import { AnimatePresence } from "framer-motion";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { ActionsProvider } from "@/context/actionsProvider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -15,15 +17,19 @@ function App({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
-      <main
-        className={`${montserrat.variable} font-mont bg-background dark:bg-dark w-full min-h-screen`}
-      >
-        <NavBar />
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Head>
+      <ActionsProvider>
+        <Header />
         <AnimatePresence mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
         <Footer />
-      </main>
+      </ActionsProvider>
     </>
   );
 }

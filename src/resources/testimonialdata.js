@@ -1,23 +1,29 @@
 export const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    id: crypto.randomUUID(),
+    timestamp: new Date(),
+    name: "Katty Aviles",
+    role: "Gerente",
+    company: "DailyGPS",
+    testimony: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    avatar: "/images/testimonials/testimony-1.jpg",
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    id: crypto.randomUUID(),
+    timestamp: new Date(),
+    name: "Lisseth Bodero",
+    role: "Asistente de gerencia",
+    company: "Bodero Racing Development",
+    testimony: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    avatar: "/images/testimonials/testimony-1.jpg",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    id: crypto.randomUUID(),
+    timestamp: new Date(),
+    name: "Erika Aviles",
+    role: "Freelance",
+    company: "Betimes Company",
+    testimony: "wjfdwjfn wjndfkjen weikdekjm weikdfkejm wdfmjkwemfdj",
+    avatar: "/images/testimonials/testimony-1.jpg",
   },
 ];

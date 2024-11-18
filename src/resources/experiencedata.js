@@ -1,4 +1,4 @@
-export const experiencedata = [
+export const experienceData = [
   {
     position: "Desarrollo full stack",
     company: "bodero racing development",
