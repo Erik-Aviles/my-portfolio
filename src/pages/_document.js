@@ -2,12 +2,12 @@ import { Html, Head, Main, NextScript } from 'next/document'
 import { Montserrat } from 'next/font/google'
 import Script from 'next/script'
 
-export default function Document () {
-  const montserrat = Montserrat({
-    subsets: ['latin'],
-    variable: '--font-mont'
-  })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-mont'
+})
 
+export default function Document () {
   return (
     <Html lang='en'>
       <Head>

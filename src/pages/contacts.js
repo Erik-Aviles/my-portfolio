@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { WhatsappIcon } from '@/components/Icons'
 
 export default function ContactPage () {
-  const phone = '9636168800'
+  const phone = '963616800'
   return (
     <>
       <Head>
