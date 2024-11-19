@@ -1,5 +1,5 @@
 const TestimonialSlider = () => {
-  return <div>Testimonial Slider</div>;
-};
+  return <div>Testimonial Slider</div>
+}
 
-export default TestimonialSlider;
+export default TestimonialSlider

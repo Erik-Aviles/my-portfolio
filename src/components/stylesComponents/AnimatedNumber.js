@@ -1,28 +1,28 @@
-import { useInView, useMotionValue, useSpring } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 const AnimatedNumber = ({ value }) => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
-  const motioValue = useMotionValue(0);
-  const sprinValue = useSpring(motioValue, { duration: 3000 });
-  const isInView = useInView(ref, { once: true });
+  const motioValue = useMotionValue(0)
+  const sprinValue = useSpring(motioValue, { duration: 3000 })
+  const isInView = useInView(ref, { once: true })
 
   useEffect(() => {
     if (isInView) {
-      motioValue.set(value);
+      motioValue.set(value)
     }
-  }, [isInView, value, motioValue]);
+  }, [isInView, value, motioValue])
 
   useEffect(() => {
-    sprinValue.on("change", (latest) => {
+    sprinValue.on('change', (latest) => {
       if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0);
+        ref.current.textContent = latest.toFixed(0)
       }
-    });
-  }, [sprinValue, value]);
+    })
+  }, [sprinValue, value])
 
-  return <span ref={ref}></span>;
-};
+  return <span ref={ref} />
+}
 
-export default AnimatedNumber;
+export default AnimatedNumber
