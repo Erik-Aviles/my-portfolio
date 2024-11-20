@@ -12,7 +12,7 @@ export const Title = ({ title, className = '' }) => {
 
 export const SubTitle = ({ title, className = '' }) => {
   return (
-    <div className='w-full px-2 flex gap-16 items-center md:justify-center'>
+    <div className='w-full px-2 flex gap-16 items-center '>
       <h3
         className={`whitespace-nowrap text-xl my-5 w-auto text-primary dark:text-primaryDark md:text-2xl ${className}`}
       >
