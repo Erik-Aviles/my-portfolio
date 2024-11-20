@@ -5,7 +5,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/stylesComponents/AnimatedText'
 import { WhatsappIcon } from '@/components/Icons'
 
-export default function ContactPage() {
+export default function ContactPage () {
   const phone = '963616800'
   return (
     <>
