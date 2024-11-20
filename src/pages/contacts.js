@@ -1,11 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/stylesComponents/AnimatedText'
-import Link from 'next/link'
 import { WhatsappIcon } from '@/components/Icons'
 
-export default function ContactPage () {
+export default function ContactPage() {
   const phone = '963616800'
   return (
     <>
@@ -36,7 +36,7 @@ export default function ContactPage () {
             </div>
           </div>
           <button
-            className='w-min h-min flex gap-2 items-center bg-transparent text-black p-2.5 px-4 rounded-lg text-lg font-semibold hover:bg-dark hover:text-white border border-solid border-light hover:border-dark dark:text-white dark:hover:border-[#00A400] dark:hover:text-[#00A400] md:p-2 xs:px-2 md:px-4 md:text-base '
+            className='w-min h-min flex gap-2 items-center bg-transparent text-black p-2.5 px-4 rounded-lg text-lg font-semibold hover:bg-dark hover:text-white border border-solid border-dark dark:border-light hover:border-dark dark:text-white dark:hover:border-[#00A400] dark:hover:text-[#00A400] md:p-2 xs:px-2 md:px-4 md:text-base '
             title='Contactárme por Whatsapp'
           >
             <Link
