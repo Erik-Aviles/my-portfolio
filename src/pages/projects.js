@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Projetcs from '@/components/Projetcs'
-import Testimonials from '@/components/Testimonials'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/stylesComponents/AnimatedText'
 
@@ -12,7 +11,7 @@ export default function ProjectsPage () {
         <title>Dev-Erika | Proyectos</title>
         <meta
           name='description'
-          content='Proyectos realizados a lo largo de mi carrera profesional'
+          content='Explora mis proyectos destacados en desarrollo web, donde la creatividad y la innovación se combinan para ofrecer soluciones digitales de impacto.'
         />
       </Head>
       <TransitionEffect />
@@ -22,7 +21,7 @@ export default function ProjectsPage () {
           className=''
         />
         <Projetcs />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </Layout>
     </>
   )

@@ -7,13 +7,15 @@ import { WhatsappIcon } from '@/components/Icons'
 
 export default function ContactPage () {
   const phone = '963616800'
+  const message =
+    'Hola, soy [escribir nombre], me interesa comunicarme contigo para hablar sobre [escribir motivo]'
   return (
     <>
       <Head>
         <title>Dev-Erika | Contactos</title>
         <meta
           name='description'
-          content='Redes sociales donde puedes segirme y observar mi trayectoria'
+          content='Conéctate conmigo a través de mis redes sociales y descubre más sobre mi trayectoria profesional en desarrollo web y creatividad digital.'
         />
       </Head>
       <TransitionEffect />
@@ -40,7 +42,7 @@ export default function ContactPage () {
             title='Contactárme por Whatsapp'
           >
             <Link
-              href={`https://api.whatsapp.com/send/?phone=593${phone}&text=Hola, me interesa comunicarme contigo.&type=phone_number&app_absent=1`}
+              href={`https://api.whatsapp.com/send/?phone=593${phone}&text=${message}&type=phone_number&app_absent=1`}
               target='_blank'
               rel='noopener noreferrer'
               className='whitespace-nowrap uppercase'

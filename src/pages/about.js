@@ -12,8 +12,11 @@ export default function AboutPage () {
   return (
     <>
       <Head>
-        <title>Dev-Erika | Sobre mi</title>
-        <meta name='description' content='Informacion personal' />
+        <title>Dev-Erika | Sobre mí</title>
+        <meta
+          name='description'
+          content='Descubre quién soy, mi experiencia en desarrollo web y mi pasión por crear soluciones digitales innovadoras.'
+        />
       </Head>
       <TransitionEffect />
       <Layout className='p-8 flex-col gap-8'>

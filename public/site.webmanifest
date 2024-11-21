@@ -1,6 +1,7 @@
 {
-  "name": "Hola, soy Erika Aviles",
-  "short_name": "Erika Aviles",
+  "name": "Erika Aviles | Desarrollo Web",
+  "short_name": "Dev-Erika",
+  "description": "Explora soluciones web innovadoras diseñadas por Erika Aviles. Desarrollo, diseño y creatividad al servicio de tus proyectos digitales.",
   "icons": [
     {
       "src": "/icons/web-app-manifest-192x192.png",
@@ -17,5 +18,7 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
 }
